@@ -42,3 +42,22 @@ Green and yellow regions indicate medium-height objects such as vehicles and roa
 Orange and red regions represent tall objects, including buildings, poles, and walls.
 
 ![Height Map](images/height_map.png)
+
+## Intensity Map Generation
+
+The intensity map stores the maximum LiDAR reflectance value for each Bird's-Eye View grid cell.
+
+Higher intensity values correspond to highly reflective surfaces such as lane markings, road signs, and metallic objects.
+The color bar on the right ranges from 0 to 1 because you normalized the values.
+
+Black (0.0): No points or very low reflectivity
+Dark gray: Weak reflections
+Light gray to white (1.0): Strong reflections
+The below intensity map shows: 
+The bright central region is the area closest to the LiDAR sensor, where returns are strongest.
+The white arcs indicate highly reflective surfaces.
+The faint outer rings are weaker returns due to increasing distance.
+The bright structures at the top are likely building facades or reflective roadside objects.
+
+
+![Intensity Map](images/intensity_map.png)
