@@ -1,17 +1,23 @@
 ## Sample Visualization
 
-The project supports loading and visualizing V2X-Sim 2.0 Mini LiDAR sweeps stored in `.pcd.bin` format.
+The project supports loading and visualizing LiDAR sweeps from the V2X-Sim 2.0 Mini dataset stored in `.pcd.bin` format.
 
-- Input format: `(x, y, z, intensity, ring_index)`
-- Sample frame: `scene_5_000006.pcd.bin`
-- Number of points: `43,542`
+**Input format:** `(x, y, z, intensity, ring_index)`  
+**Sample frame:** `scene_5_000006.pcd.bin`  
+**Number of points:** `43,542`
 
-![Point Cloud](images/pointcloud.png)
+### Raw Point Cloud
 
-## Preprocessing
+![Raw Point Cloud](images/pointcloud.png)
 
-The preprocessing pipeline includes:
+## Preprocessing Pipeline
 
-- Invalid point removal
-- Distance filtering (50 m)
-- Ground removal (z > -2 m)
+The preprocessing pipeline applies the following steps:
+
+- Remove invalid points (`NaN` and `Inf`)
+- Filter points beyond a 50 m radius
+- Remove ground points with `z ≤ -2.0 m`
+
+### Filtered Point Cloud
+
+![Filtered Point Cloud](images/pointcloud_filtered.png)
