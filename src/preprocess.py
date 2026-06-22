@@ -23,7 +23,7 @@ z_norm = (z - z.min()) / (z.max() - z.min())
 
 colors = plt.get_cmap("jet")(z_norm)[:, :3]
 
-# Create Open3D point cloud
+
 pcd = o3d.geometry.PointCloud()
 
 pcd.points = o3d.utility.Vector3dVector(xyz)
