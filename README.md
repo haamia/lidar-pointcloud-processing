@@ -27,3 +27,18 @@ The preprocessing pipeline applies the following steps:
 This project converts V2X-Sim LiDAR point clouds into 2D occupancy maps.
 
 ![BEV Map](images/bev_map.png)
+
+## Height Map Generation
+
+The height map stores the maximum LiDAR height value for each grid cell in the Bird's-Eye View representation.
+
+Higher values correspond to taller structures such as buildings, poles, and vegetation.
+
+In the visualization below:
+Dark blue regions correspond to ground surfaces and low-lying areas.
+
+Green and yellow regions indicate medium-height objects such as vehicles and roadside structures.
+
+Orange and red regions represent tall objects, including buildings, poles, and walls.
+
+![Height Map](images/height_map.png)
