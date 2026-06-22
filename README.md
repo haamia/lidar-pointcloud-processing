@@ -51,12 +51,17 @@ Higher intensity values correspond to highly reflective surfaces such as lane ma
 The color bar on the right ranges from 0 to 1 because you normalized the values.
 
 Black (0.0): No points or very low reflectivity
+
 Dark gray: Weak reflections
+
 Light gray to white (1.0): Strong reflections
+
 The below intensity map shows: 
 The bright central region is the area closest to the LiDAR sensor, where returns are strongest.
+
 The white arcs indicate highly reflective surfaces.
 The faint outer rings are weaker returns due to increasing distance.
+
 The bright structures at the top are likely building facades or reflective roadside objects.
 
 
