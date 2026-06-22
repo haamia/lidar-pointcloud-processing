@@ -57,12 +57,24 @@ Dark gray: Weak reflections
 Light gray to white (1.0): Strong reflections
 
 The below intensity map shows: 
+
 The bright central region is the area closest to the LiDAR sensor, where returns are strongest.
 
 The white arcs indicate highly reflective surfaces.
+
 The faint outer rings are weaker returns due to increasing distance.
 
 The bright structures at the top are likely building facades or reflective roadside objects.
 
 
 ![Intensity Map](images/intensity_map.png)
+
+
+## ROS 2 and RViz Integration
+
+The processed LiDAR point cloud is published as a ROS 2 `sensor_msgs/msg/PointCloud2` message and visualized in RViz.
+
+This enables integration with robotics pipelines for localization, mapping, perception, and navigation.
+
+
+![RViz Point Cloud](images/rviz_pointcloud.png)
