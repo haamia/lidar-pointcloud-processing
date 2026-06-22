@@ -67,14 +67,16 @@ The faint outer rings are weaker returns due to increasing distance.
 The bright structures at the top are likely building facades or reflective roadside objects.
 
 
-![Intensity Map](images/intensity_map.png)
+<p align="center">
+  <img src="images/intensity_map.png" alt="LiDAR Intensity Map" width="700">
+</p>
 
 
 ## ROS 2 and RViz Integration
 
 The processed LiDAR point cloud is published as a ROS 2 `sensor_msgs/msg/PointCloud2` message and visualized in RViz.
 
-This enables integration with robotics pipelines for localization, mapping, perception, and navigation.
+This enables integration with robotics pipelines for localization, mapping, perception and navigation.
 
 
 ![RViz Point Cloud](images/rviz_pointcloud.png)
