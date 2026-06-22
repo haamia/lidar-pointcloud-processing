@@ -21,3 +21,9 @@ The preprocessing pipeline applies the following steps:
 ### Filtered Point Cloud
 
 ![Filtered Point Cloud](images/pointcloud_filtered.png)
+
+
+## Bird's-Eye View Generation
+This project converts V2X-Sim LiDAR point clouds into 2D occupancy maps.
+
+![BEV Map](images/bev_map.png)
